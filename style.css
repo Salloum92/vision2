@@ -418,6 +418,7 @@ header .arrow-down {
   margin: -175px 0 0 0 ;
   display: flex;
   width: 450px;
+  float: left;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -454,6 +455,7 @@ font-family: esthetique;
   height: 232px;
   margin: -190px 0 0 800px ;
   display: flex;
+  float: right;
   align-self: flex-end;
 }
 
@@ -1662,8 +1664,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
   /*...small...*/
   .card-sm__container {
     height: 150px;
-    margin: -50px 0 0 200px;
-    align-self: flex-end;
+    margin: -200px 0 0 200px;
+    display: flex;
   }
 
   .wrap {
@@ -1675,6 +1677,150 @@ Remove or comment-out the code block below to see how the browser will fall-back
     color: #000;
 
   }
+}
+@media (max-width: 280px) {
+  
+  h3,
+  h1 {
+    font-size: 90%;
+  }
+
+  h2 {
+    font-size: 90px
+  }
+
+  header {
+    height: auto;
+  }
+
+  header nav .logo {
+    text-align: center;
+    padding-left: 85px;
+  }
+
+  header nav .toggle.active {
+    left: 40%;
+  }
+
+  header .navigation-bar.show {
+    padding: auto;
+    width: 60%;
+  }
+
+  /*CARD*/
+  /*...large...*/
+  .card-lg__container {
+    margin-top: -500px;
+    width: 200px;
+    float: none;
+    padding-left: 25px;
+  }
+
+  .card__text-lg {
+    font-family: esthetique;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+  }
+
+  .card__text-sm {
+    font-size: 8px;
+  }
+
+  /*...small...*/
+  .card-sm__container {
+    height: 150px;
+    margin: -50px 0 0 5px;
+    align-self: flex-end;
+    float: none;
+    width: 5px;
+  }
+
+
+
+
+    .slider {
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      padding: 0 2em;
+      display: inline-block;
+      width: 90%;
+  
+    }
+  
+    .slider h1 {
+      font-size: 10vw;
+      margin: 0;
+      padding-bottom: 0.5rem;
+      letter-spacing: 0.3rem;
+      font-family: esthetique;
+      color: #000000;
+      transition: all 0.3s ease;
+      z-index: 3;
+    }
+  
+    h1:hover {
+      transform: translate3d(0, -10px, 15px);
+      color: #a96700;
+    }
+  
+    .slider h2 {
+      font-size: 2vw;
+      letter-spacing: 0.3rem;
+      font-family: esthetique;
+      font-weight: 300;
+      color: #faebd7;
+      z-index: 4;
+    }
+  
+  
+
+
+  
+    .legal {
+      font-size: smaller;
+  
+    }
+  
+  
+  
+  
+    /* --------------- Group Sttaf Photo --------------*/
+  
+  
+    .flip-card-container {
+      width: 95%;
+      height: 200px;
+    }
+  
+ 
+
+    /* figcaption */
+    figcaption {
+      font-size: 10px;
+
+    }
+ 
+   
+    /* ------------------------ Gallery ----------------------- */
+  
+  
+    .container_gallery {
+      max-width: 50rem;
+      margin: 0 auto;
+      padding: 0 2rem 2rem;
+      font-family: esthetique;
+    }
+  
+  
+    .container_gallery h1 {
+      font-size: 2rem;
+    }
+
 }
 
 /*End Home Page Responsive*/
